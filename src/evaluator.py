@@ -34,7 +34,7 @@ def run(file_path):
     return results
 
 if __name__ == "__main__":
-    results = run("../prompts/direct_injection.txt")
+    results = run("prompts/direct_injection.txt")
 
     with open("../results/sample_run.json", "w") as f:
         json.dump(results, f, indent=2)
