@@ -85,10 +85,10 @@ def save_results(results, output_file):
 
 if __name__ == "__main__":
 
-    prompts = load_prompts("../prompts/direct_injection.txt")
+    prompts = load_prompts("prompts/direct_injection.txt")
 
     results = run_evaluation(prompts)
 
-    save_results(results, "../results/sample_run.json")
+    save_results(results, "results/sample_run.json")
 
     print("Evaluation complete.")
