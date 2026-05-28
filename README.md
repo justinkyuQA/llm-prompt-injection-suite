@@ -1,98 +1,166 @@
-# llm-prompt-injection-suite
-Framework for evaluating prompt injection resilience and adversarial prompt behavior in large language models.
-# LLM Prompt Injection Suite
+LLM Prompt Injection Suite
 
-AI security evaluation toolkit for testing prompt injection resilience, jailbreak behavior, and large language model robustness.
+A modular toolkit for evaluating prompt injection vulnerabilities, adversarial behaviors, and instruction bypass techniques in Large Language Models (LLMs).
 
 ---
 
-## Overview
+Overview
 
-This project is an experimental framework for evaluating how large language models respond to adversarial prompts designed to test instruction hierarchy, safety boundaries, behavioral consistency, and prompt injection resistance.
+The LLM Prompt Injection Suite is a research-oriented project focused on testing the resilience and safety boundaries of modern AI systems.
 
-The goal is to support AI safety research, adversarial evaluation, and defensive security analysis through structured testing methodologies.
+This toolkit is designed to help researchers, developers, and security practitioners:
 
----
+- evaluate prompt injection resistance
+- analyze jailbreak effectiveness
+- test instruction hierarchy handling
+- measure safety policy robustness
+- build datasets for adversarial AI testing
+- automate evaluation workflows
 
-## Research Focus
-
-- Prompt Injection Analysis
-- Adversarial Prompt Engineering
-- LLM Behavioral Testing
-- AI Safety Evaluation
-- Alignment Stress Testing
-- Behavioral Failure Mode Analysis
-- AI Red Team Methodologies
+The project is intended for defensive security research, model evaluation, and AI alignment experimentation.
 
 ---
 
-## Current Features
+Features
 
-- Prompt injection test datasets
-- Basic evaluation pipeline
-- Structured response logging
-- Refusal behavior classification
-- Expandable testing framework
+Current Features
 
----
+- Prompt injection testing
+- Basic evaluator framework
+- Prompt corpus support
+- Result logging
+- Modular Python structure
+- Dataset experimentation
 
-## Project Structure
+Planned Features
 
-```txt
-prompts/        -> adversarial prompt datasets
-src/            -> evaluation scripts
-results/        -> output logs and analysis
-```
-
----
-
-## How It Works
-
-1. Load adversarial test prompts
-2. Send prompts to a language model
-3. Capture model responses
-4. Evaluate behavioral outcomes
-5. Save structured results for analysis
+- Automated fuzzing engine
+- Payload mutation system
+- Scoring and ranking metrics
+- Batch testing pipelines
+- Local LLM integration
+- Docker deployment support
+- Reporting dashboard
+- JSON/CSV export support
+- Multi-model comparison testing
 
 ---
 
-## Current Status
+Project Structure
 
-Early-stage research prototype focused on building reproducible AI safety evaluation workflows and adversarial testing methodologies.
+llm-prompt-injection-suite/
+├── prompts/
+├── datasets/
+├── outputs/
+├── src/
+│   ├── evaluator.py
+│   ├── scoring.py
+│   └── utils.py
+├── tests/
+├── requirements.txt
+└── README.md
 
 ---
 
-## Planned Features
+Installation
 
-- Multi-model testing support
-- Advanced scoring taxonomy
-- Prompt mutation engine
-- Automated behavioral analysis
-- Visualization dashboards
+Clone the repository:
+
+git clone https://github.com/YOUR_USERNAME/llm-prompt-injection-suite.git
+cd llm-prompt-injection-suite
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+---
+
+Usage
+
+Run the evaluator:
+
+python src/evaluator.py
+
+Future releases will support:
+
+- configurable payload sets
 - API integrations
-- Structured benchmark comparisons
+- local model testing
+- automated fuzzing workflows
 
 ---
 
-## Ethical Use Statement
+Research Goals
 
-This project is intended strictly for:
+This project explores:
 
-- AI safety research
-- Defensive security analysis
-- Adversarial robustness testing
-- Educational purposes
-- Responsible disclosure practices
-
-This repository is not intended to facilitate malicious activity or unauthorized access.
-
----
-
-## Author
-
-Justin Kyu  
-Independent AI Security Researcher
+- adversarial prompting
+- prompt injection vectors
+- instruction override attacks
+- context poisoning
+- prompt leakage
+- evaluation methodologies for AI systems
 
 ---
 
-> “Robust systems are built by understanding how they fail.”
+Ethical Use
+
+This repository is intended strictly for:
+
+- defensive security research
+- educational purposes
+- AI safety evaluation
+- authorized testing environments
+
+Users are responsible for complying with all applicable laws, platform policies, and responsible disclosure practices.
+
+---
+
+Roadmap
+
+v0.1
+
+- Initial evaluator
+- Basic prompt datasets
+- Logging support
+
+v0.2
+
+- Mutation engine
+- Payload generation
+- Improved reporting
+
+v0.3
+
+- LLM fuzzing integration
+- Multi-model benchmarking
+- Dockerized deployment
+
+v1.0
+
+- Full modular framework
+- Plugin architecture
+- Automated research workflows
+
+---
+
+Technologies
+
+- Python
+- Git
+- GitHub
+- Linux / Termux
+- AI Safety Research
+- LLM Evaluation Techniques
+
+---
+
+Contributing
+
+Contributions, ideas, and research discussions are welcome.
+
+---
+
+License
+
+MIT License
