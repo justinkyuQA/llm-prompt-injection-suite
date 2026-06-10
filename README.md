@@ -66,7 +66,7 @@ Installation
 
 Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/llm-prompt-injection-suite.git
+git clone https://github.com/justinkyuQA/llm-prompt-injection-suite.git
 cd llm-prompt-injection-suite
 
 Install dependencies:
