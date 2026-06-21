@@ -1,53 +1,114 @@
+cat > README.md <<'EOF'
 # LLM Prompt Injection Suite
 
-A modular toolkit for evaluating prompt injection vulnerabilities, adversarial behaviors, and instruction bypass techniques in Large Language Models (LLMs).
+A modular toolkit for evaluating prompt injection vulnerabilities, adversarial behaviors, jailbreak attempts, and instruction bypass techniques in Large Language Models (LLMs).
 
 ---
 
-# Screenshots
+## Overview
 
-## Batch Evaluation
+The LLM Prompt Injection Suite is a research-oriented framework focused on testing the resilience and safety boundaries of modern AI systems.
 
-![Batch Evaluation](screenshots/01-batch-evaluation.jpg)
-
-## Project Structure
-
-![Project Structure](screenshots/02-project-structure.jpg)
-
-## Attack Library
-
-![Attack Library](screenshots/03-attack-library.jpg)
-
-## Attack Datasets and Results
-
-![Attack Datasets and Results](screenshots/04-attack-datasets-and-results.jpg)
-
-## Scoring Engine Output
-
-![Scoring Engine Output](screenshots/05-scoring-engine-output.jpg)
-
----
-
-# Overview
-
-The LLM Prompt Injection Suite is a research-oriented project focused on testing the resilience and safety boundaries of modern AI systems.
-
-This toolkit is designed to help researchers, developers, and security practitioners:
+This toolkit helps researchers, developers, and security practitioners:
 
 - Evaluate prompt injection resistance
 - Analyze jailbreak effectiveness
 - Test instruction hierarchy handling
 - Measure safety policy robustness
-- Build datasets for adversarial AI testing
+- Build adversarial testing datasets
 - Automate evaluation workflows
 
-The project is intended for defensive security research, model evaluation, and AI alignment experimentation.
+The project is intended for defensive security research, AI safety testing, and model evaluation.
 
 ---
 
-# Features
+## Why This Project Exists
 
-## Current Features
+Prompt injection remains one of the most common attack classes affecting modern LLM applications.
+
+The LLM Prompt Injection Suite provides a lightweight, reproducible framework for evaluating instruction bypass techniques, prompt leakage attempts, jailbreak prompts, and adversarial behaviors in large language models.
+
+The goal is to support defensive security research, AI safety testing, and evaluation methodology development.
+
+---
+
+## Quick Example
+
+Run a prompt injection evaluation:
+
+```bash
+python src/evaluator.py --dataset prompts/direct_injection.txt
+t_injection.txt
+
+```
+
+Example output:
+
+```text
+Loaded prompts
+Evaluation complete.
+Results saved to results/direct_injection_results.json
+```
+
+---
+
+## Evaluation Workflow
+
+Prompt Dataset
+
+↓
+
+Batch Evaluation
+
+↓
+
+Scoring Engine
+
+↓
+
+JSON Results
+
+↓
+
+Evaluation Report
+
+↓
+
+Risk Analysis
+
+---
+
+## Screenshots
+
+### Batch Evaluation
+
+![Batch Evaluation](screenshots/01-batch-evaluation.jpg)
+
+### Project Structure
+
+![Project Structure](screenshots/02-project-structure.jpg)
+
+### Attack Library
+
+![Attack Library](screenshots/03-attack-library.jpg)
+
+### Attack Datasets and Results
+
+![Attack Datasets and Results](screenshots/04-attack-datasets-and-results.jpg)
+
+### Scoring Engine Output
+
+![Scoring Engine Output](screenshots/05-scoring-engine-output.jpg)
+
+### Sample Evaluation Report
+
+![Sample Evaluation Report](screenshots/06-sample-report.jpg)
+
+---
+
+## Features
+
+### Current Features
 
 - Prompt injection testing
 - Batch evaluation runner
@@ -57,66 +118,73 @@ The project is intended for defensive security research, model evaluation, and A
 - Roleplay attack datasets
 - JSON result generation
 - Injection success scoring
-- Modular Python structure
-- Screenshot documentation
-
-## Planned Features
-
-- Automated fuzzing engine
-- Payload mutation system
-- Advanced scoring metrics
-- Multi-model comparison
-- Local LLM integration
-- Docker deployment support
-- Reporting dashboard
-- JSON/CSV export support
+- Structured reporting
+- Modular Python architecture
 
 ---
 
-# Project Structure
+## Reporting
 
-\`\`\`
+The Prompt Injection Suite can generate structured evaluation reports for adversarial prompt testing.
+
+Reports summarize:
+
+- Attack categories
+- Injection success rates
+- Risk ratings
+- Findings
+- Recommendations
+
+Example reports are stored in the `reports/` directory.
+
+---
+
+## Project Structure
+
+```text
 llm-prompt-injection-suite/
 ├── prompts/
 ├── results/
+├── reports/
 ├── screenshots/
 ├── src/
 ├── README.md
 ├── RELEASE.md
 └── LICENSE
-\`\`\`
+```
 
 ---
 
-# Installation
+## Installation
 
-\`\`\`bash
+```bash
 git clone https://github.com/justinkyuQA/llm-prompt-injection-suite.git
 
 cd llm-prompt-injection-suite
 
 pip install -r requirements.txt
-\`\`\`
+```
 
 ---
 
-# Usage
+## Usage
 
 Run the batch evaluation suite:
 
-\`\`\`bash
+```bash
 python src/run_all.py
-\`\`\`
+```
 
-Run the evaluator manually:
+Run a specific dataset:
 
-\`\`\`bash
+```bash
 python src/evaluator.py --dataset prompts/direct_injection.txt
-\`\`\`
+
+```
 
 ---
 
-# Research Goals
+## Research Goals
 
 This project explores:
 
@@ -129,7 +197,7 @@ This project explores:
 
 ---
 
-# Ethical Use
+## Ethical Use
 
 This repository is intended strictly for:
 
@@ -142,9 +210,9 @@ Users are responsible for complying with all applicable laws, platform policies,
 
 ---
 
-# Roadmap
+## Roadmap
 
-## v1.0
+### v1.0
 
 - Prompt injection datasets
 - Batch evaluation framework
@@ -152,13 +220,13 @@ Users are responsible for complying with all applicable laws, platform policies,
 - Screenshot documentation
 - Public release
 
-## v1.1
+### v1.1
 
-- Mutation engine
+- Structured reporting
 - Expanded attack corpus
 - Enhanced scoring metrics
 
-## v2.0
+### v2.0
 
 - Multi-model evaluation
 - Local LLM integration
@@ -166,7 +234,7 @@ Users are responsible for complying with all applicable laws, platform policies,
 
 ---
 
-# Technologies
+## Technologies
 
 - Python
 - Git
@@ -178,12 +246,15 @@ Users are responsible for complying with all applicable laws, platform policies,
 
 ---
 
-# Contributing
+## Contributing
 
 Contributions, ideas, and research discussions are welcome.
 
 ---
 
-# License
+## License
 
 MIT License
+
+
+
