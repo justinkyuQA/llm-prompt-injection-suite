@@ -3,6 +3,27 @@ LLM Prompt Injection Suite
 A modular toolkit for evaluating prompt injection vulnerabilities, adversarial behaviors, and instruction bypass techniques in Large Language Models (LLMs).
 
 ---
+Screenshots
+
+Batch Evaluation
+
+"Batch Evaluation" (screenshots/01-batch-evaluation.jpg)
+
+Project Structure
+
+"Project Structure" (screenshots/02-project-structure.jpg)
+
+Attack Library
+
+"Attack Library" (screenshots/03-attack-library.jpg)
+
+Attack Datasets and Results
+
+"Attack Datasets and Results" (screenshots/04-attack-datasets-and-results.jpg)
+
+Scoring Engine Output
+
+"Scoring Engine Output" (screenshots/05-scoring-engine-output.jpg)
 
 Overview
 
